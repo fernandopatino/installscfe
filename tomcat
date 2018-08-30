@@ -1,0 +1,9 @@
+sudo groupadd tomcat
+sudo useradd -s /bin/false -g tomcat -d /opt/tomcat tomcat
+sudo mkdir /opt/tomcat
+wget -c http://apache.uniminuto.edu/tomcat/tomcat-7/v7.0.90/bin/apache-tomcat-7.0.90.tar.gz
+sudo tar xzvf apache-tomcat-7.0.90.tar.gz -C /opt/tomcat 
+cd /opt/tomcat
+​sudo chgrp -R tomcat /opt/tomcat
+​sudo chown -R tomcat /opt/tomcat
+
